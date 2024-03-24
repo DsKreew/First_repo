@@ -73,7 +73,92 @@
 # nums.sort(reverse=True)
 # print(nums)
 
-words = ["banana", "apple", "cherry"]
-words.sort(key=len)
-# sorted (words)
-print(words)
+# words = ["banana", "apple", "cherry"]
+# words.sort(key=len)
+# # sorted (words)
+# print(words)
+
+# my_dict = {"name": "Dmytro", "age": 24, "city": "Ivano-Frankivs'k"}
+# my_dict["email"] = "dimakrevsun98@gmail.com"
+# my_dict["age"] = 25
+# del my_dict["age"]
+
+# print("email" in my_dict)
+# print("age" in my_dict)
+
+# my_dict = {"name": "Dmytro", "age": 25}
+# age = my_dict.get("age")  # Поверне 25
+# gender = my_dict.get("gender")
+# print(gender)
+
+# b = set #Множина
+# b = {1, 2, 3, 3, 2}
+# print(b)
+
+# lst = [1, 2, 3, 1, 2, 2, 3, 4, 1] #Виключення  дублів зі списку шляхом перетворення списку в множину
+# d_lst = set(lst)
+# lst = d_lst
+# lst.add(4)
+
+# print(lst)
+
+# numbers = {1, 2, 3}
+# numbers.discard(4)
+# print(numbers)
+
+# a = {1, 2, 3} #Знаходження спільних елементів у множинах
+# b = {3, 4, 5}
+# print(a.intersection(b))
+# print(a & b)
+
+# a = {1, 2, 3} #Знаходження різниці елементів у множинах
+# b = {3, 4, 5}
+# print(a.difference(b))
+# print(a - b)
+
+# a = {1, 2, 3} #Знаходження симетричної різниці (не спільні елементи) елементів у множинах
+# b = {3, 4, 5}
+# print(a.symmetric_difference(b))  # {1, 2, 4, 5}
+# print(a ^ b)  # {1, 2, 4, 5}
+
+# a = frozenset([1, 2, 3])
+# b = frozenset([3, 4, 5])
+
+# union = a | b  # Об'єднання множин
+# intersection = a & b  # Перетин множин
+# difference = a - b  # Різниця множин
+# symmetric_difference = a ^ b  # Симетрична різниця
+
+# print(union)  # frozenset({1, 2, 3, 4, 5})
+# print(intersection)  # frozenset({3})
+# print(difference)  # frozenset({1, 2})
+# print(symmetric_difference)  # frozenset({1, 2, 4, 5})
+
+
+# points = {   #Кортежний словник
+#     (0, 0): "C",
+#     (1, 1): "A",
+#     (2, 2): "B"
+# }
+# turple_c = points.get((0, 0))
+# print(turple_c)
+
+
+# s = "Hello Dmytro"
+# print(s[0])# H
+# print(s[-1])# o
+
+# Просте форматування рядка
+name = 'Dmytro'
+print('Hello, {}!'.format(name))
+
+# Форматування з декількома аргументами
+age = 25
+print('Hello, {}. You are {} years old.'.format(name, age))
+
+# Використання іменованих аргументів
+print('Hello, {name}. You are {age} years old.'.format(name='Jane', age=30))
+
+# Використання індексів для вказівки порядку аргументів
+print('Hello, {1}. You are {0} years old.'.format(age, name))
+
