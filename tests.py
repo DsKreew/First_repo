@@ -148,17 +148,92 @@
 # print(s[0])# H
 # print(s[-1])# o
 
-# Просте форматування рядка
-name = 'Dmytro'
-print('Hello, {}!'.format(name))
+# # Просте форматування рядка
+# name = 'Dmytro'
+# print('Hello, {}!'.format(name))
 
-# Форматування з декількома аргументами
-age = 25
-print('Hello, {}. You are {} years old.'.format(name, age))
+# # Форматування з декількома аргументами
+# age = 25
+# print('Hello, {}. You are {} years old.'.format(name, age))
 
-# Використання іменованих аргументів
-print('Hello, {name}. You are {age} years old.'.format(name='Jane', age=30))
+# # Використання іменованих аргументів
+# print('Hello, {name}. You are {age} years old.'.format(name='Jane', age=30))
 
-# Використання індексів для вказівки порядку аргументів
-print('Hello, {1}. You are {0} years old.'.format(age, name))
+# # Використання індексів для вказівки порядку аргументів
+# print('Hello, {1}. You are {0} years old.'.format(age, name))
 
+# s = "Hello, World!"
+# first_five = s[:5]
+# print(first_five)  # Виведе 'Hello'
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# odd_numbers = numbers[::2]
+# print(odd_numbers)
+
+# even_numbers = numbers[1:10:2]
+# print(even_numbers)
+
+# length = "2.75"
+# width = "1.75"
+# area = float(length) * float(width)
+# show = f"With width {width} and length {length} of the room, its area is equal to area {area}."
+# print(show)
+
+# name = input("Your name? ")
+# email = input("Your email? ")
+# age = input("Your age? ")
+# age = int
+# height = input("Your height? ")
+# height = float
+# is_active = True
+
+# my_list = [2024, 3.12]
+# some_data = ['Python']
+# my_list.insert(1,'Python')
+# my_list.extend(some_data)
+# print(my_list)
+
+# num = 10
+# if num > 10:
+# else:
+#     print("num не більше за 10")
+
+# x = int(input('Введіть число: '))
+# if x % 2 == 0:
+#     print("Число x є парним")
+# else:
+#     print("Число x є непарним")
+
+# a = int(input ('Введіть число'))
+# if a>0:
+#     print('Positive number')
+# elif a<0:
+#     print('Negative number')
+# else:
+#     print('This is zero')
+
+# money = int(input('insert ammount of money '))
+# if money:
+#     print(f'You have {money} on your bank account')
+# else:
+#     print('You have no money on your bank account')
+
+# result = None
+# if result:
+#     print(result)
+# else:
+#     print("Result is None, do something")
+
+# user_name = input("Enter your name: ")
+
+# if user_name:
+#     print(f"Hello {user_name}")
+# else:
+#     print("Hi Anonym!")
+
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a is b)  # True
+print(a is c)  # False
